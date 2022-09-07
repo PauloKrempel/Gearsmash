@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerMoveController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Header("Player Animation")]
+    [HideInInspector][SerializeField] Animator anim;
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetTrigger("jump");
+        }
     }
 }
