@@ -156,7 +156,7 @@ AnimationClip:
   - time: 0.33333334
     functionName: JumpPlayer
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: d753f6b46d728a949b520d2cd8dc91e5, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
