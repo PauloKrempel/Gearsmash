@@ -23,8 +23,13 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy Die");
         // Die Animation
         animator.SetBool("IsDead", true);
+        
+    }
+
+    public void isDead()
+    {
         //Disable the Enemy
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
+        GetComponent<Collider2D>().isTrigger = true;
+        //this.enabled = false;
     }
 }
