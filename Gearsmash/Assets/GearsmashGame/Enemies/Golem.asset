@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da7a2d715bea484ab9599611f7031ab, type: 3}
+  m_Name: Golem
+  m_EditorClassIdentifier: 
+  ID: 0
+  Level: 3
+  IsAlive: 1
+  DefaultSprite: {fileID: 21300000, guid: 907382fe3483cba4aa63e7c5c1fb076f, type: 3}
+  NameEnemy: Boss Golem
+  EnemyType: 2
+  Life: 300
+  DamageAttack: 30
+  XP: 1000
+  GoldReward: 350
