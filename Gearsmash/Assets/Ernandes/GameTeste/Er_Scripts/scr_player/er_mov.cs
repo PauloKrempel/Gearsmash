@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class er_mov : MonoBehaviour
 {
+    public int PlayerDamage = 10;
+    public bool isAttacking;
     public float playerSpeed;
     public float playerJumpSpeed;
     protected int direction;
