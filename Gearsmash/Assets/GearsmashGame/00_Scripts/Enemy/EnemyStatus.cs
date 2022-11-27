@@ -20,6 +20,7 @@ namespace EnemySystem.Status
         [Header("Status")]
         public int Life;
         public int DamageAttack;
+        public float Speed;
         public int XP;
         public int GoldReward;
     }

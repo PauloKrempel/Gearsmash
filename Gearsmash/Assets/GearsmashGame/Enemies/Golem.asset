@@ -20,5 +20,6 @@ MonoBehaviour:
   EnemyType: 2
   Life: 300
   DamageAttack: 30
+  Speed: 2.5
   XP: 1000
   GoldReward: 350
