@@ -24,23 +24,35 @@ public class Boss_Run : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         boss.LookAtPlayer();
-        
-        Vector3 target = new Vector2(player.position.x, rb.position.y);
-        Vector3 newPos = Vector2.MoveTowards(rb.position, target, status.Speed * Time.fixedDeltaTime);
-        rb.MovePosition(newPos);
+
+        if (Vector2.Distance(player.position, rb.position) > attackRange)
+        {
+            Vector3 target = new Vector2(player.position.x, rb.position.y);
+            Vector3 newPos = Vector2.MoveTowards(rb.position, target, status.Speed * Time.fixedDeltaTime);
+            rb.MovePosition(newPos);
+        }
 
         if (Vector2.Distance(player.position, rb.position) <= attackRange)
         {
-            animator.SetTrigger("Attack");
+            
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                animator.SetTrigger("Jump");
+            }
+            else if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                animator.SetTrigger("Attack");
+            }
         }
         
-        Debug.Log("indo para" + newPos + "my possition is :" + rb.position);
+        //Debug.Log("indo para" + newPos + "my possition is :" + rb.position);
     }
 
      //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("Attack");
+        // animator.ResetTrigger("Attack");
+        // animator.SetTrigger("Jump");
     }
 
     
