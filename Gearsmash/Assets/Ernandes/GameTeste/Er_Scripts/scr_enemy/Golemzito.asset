@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da7a2d715bea484ab9599611f7031ab, type: 3}
+  m_Name: Golemzito
+  m_EditorClassIdentifier: 
+  ID: 1
+  Level: 1
+  IsAlive: 1
+  DefaultSprite: {fileID: 21300000, guid: 0c184643042f25d42928021cda09cfb4, type: 3}
+  NameEnemy: 
+  EnemyType: 1
+  Life: 10
+  DamageAttack: 5
+  XP: 10
+  GoldReward: 5
