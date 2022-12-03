@@ -39,6 +39,7 @@ public class TesteCamera : MonoBehaviour
         {
             cristal.SetActive(true);
         }
+        
     }
     
 }

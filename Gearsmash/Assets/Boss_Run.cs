@@ -9,6 +9,9 @@ public class Boss_Run : StateMachineBehaviour
     private Transform player;
     private Rigidbody2D rb;
     private Boss boss;
+    [SerializeField] private string[] AvailableStatus;
+    [SerializeField] private int StateSelect;
+    public bool inAnimate = false;
 
     public float attackRange = 5f;
     
@@ -25,35 +28,60 @@ public class Boss_Run : StateMachineBehaviour
     {
         boss.LookAtPlayer();
 
-        if (Vector2.Distance(player.position, rb.position) > attackRange)
+        //Debug.Log();
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Run") && !inAnimate)
         {
-            Vector3 target = new Vector2(player.position.x, rb.position.y);
-            Vector3 newPos = Vector2.MoveTowards(rb.position, target, status.Speed * Time.fixedDeltaTime);
-            rb.MovePosition(newPos);
-        }
-
-        if (Vector2.Distance(player.position, rb.position) <= attackRange)
-        {
-            
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Vector2.Distance(player.position, rb.position) > attackRange)
             {
-                animator.SetTrigger("Jump");
+                Vector3 target = new Vector2(player.position.x, rb.position.y);
+                Vector3 newPos = Vector2.MoveTowards(rb.position, target, status.Speed * Time.fixedDeltaTime);
+                rb.MovePosition(newPos);
             }
-            else if(Input.GetKeyDown(KeyCode.Alpha2))
+
+            if (Vector2.Distance(player.position, rb.position) <= attackRange && !inAnimate)
             {
-                animator.SetTrigger("Attack");
+                RandomState();
+            
+                if (StateSelect == 1)
+                {
+                    animator.SetTrigger("Attack");
+                    inAnimate = true;
+                    //Debug.Log("Estado 01");
+                }
+                else if (StateSelect == 2)
+                {
+                    animator.SetTrigger("Jump");
+                    inAnimate = true;
+                    //Debug.Log("Estado 02");
+                }
             }
         }
         
+
+        //inAnimate = true;
+
+
+
         //Debug.Log("indo para" + newPos + "my possition is :" + rb.position);
     }
 
      //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        // animator.ResetTrigger("Attack");
-        // animator.SetTrigger("Jump");
+        //animator.ResetTrigger("Attack");
+        //animator.SetTrigger("Jump");
+        
     }
 
+    private void RandomState()
+    {
+        if (!inAnimate)
+        {
+            StateSelect = Random.Range(1, AvailableStatus.Length+1);
+            Debug.Log("Sorteando um estado");
+            Debug.Log($"O Estado sorteado é: {StateSelect}");
+        }
+    }
     
+
 }

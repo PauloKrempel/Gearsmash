@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1600871887333182560}
   - component: {fileID: 1600871887333182561}
   - component: {fileID: 1600871887333182562}
+  - component: {fileID: 1872867007174314762}
   m_Layer: 0
   m_Name: Cristal Trincado I
-  m_TagString: Untagged
+  m_TagString: Cristal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,3 +196,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1872867007174314762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600871887333182563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d3547f9f35c9c4984ef8a16be7d7e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnUm: {fileID: 1202642033623427648, guid: 5c76c6632ec958542b3deaa9b982d369, type: 3}
+  spawnDOIS: {fileID: 2240385313314416715, guid: 0d7bead507cc77f40bf62c24583d1400, type: 3}

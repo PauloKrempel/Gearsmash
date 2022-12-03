@@ -21,13 +21,13 @@ public class GolemEnemy : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collision col)
-    {
-        if(col.gameObject.tag == "playerattack"){
-            if(player.isAttacking == true && JaTomeiDano == false){
-                Life = Life - player.PlayerDamage;
-                
-            }
-        }
-    }
+    // private void OnTriggerEnter2D(Collision col)
+    // {
+    //     if(col.gameObject.tag == "playerattack"){
+    //         if(player.isAttacking == true && JaTomeiDano == false){
+    //             Life = Life - player.PlayerDamage;
+    //             
+    //         }
+    //     }
+    // }
 }
