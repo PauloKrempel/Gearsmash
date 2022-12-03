@@ -7,6 +7,7 @@ public class Boss_Jump : StateMachineBehaviour
 {
     //public CameraShake camShake;
     public TesteCamera cameraShake;
+    public CristalSpawn cristalSpawn;
 
     //public GameObject Cristal;
     //public Transform spawnUm;
@@ -17,6 +18,7 @@ public class Boss_Jump : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         cameraShake = animator.GetComponent<TesteCamera>();
+        cristalSpawn = animator.GetComponent<CristalSpawn>();
         Debug.Log(cameraShake.name);
     }
 
@@ -24,11 +26,13 @@ public class Boss_Jump : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         cameraShake.AtivarCristais();
+        cristalSpawn.enabled = true;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        cameraShake.Sacudir();
+        //cameraShake.Sacudir();
+        cristalSpawn.enabled = false;
     }
 }

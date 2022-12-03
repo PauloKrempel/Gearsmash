@@ -3306,6 +3306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 973294394}
+  spr: {fileID: 0}
   isFlipped: 0
 --- !u!4 &2108313325 stripped
 Transform:
@@ -3727,6 +3728,10 @@ PrefabInstance:
     - target: {fileID: 7228088920051304566, guid: a48f59756b9d3ec4081b04a314575a76, type: 3}
       propertyPath: m_Name
       value: Arthuro
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228088920051304566, guid: a48f59756b9d3ec4081b04a314575a76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7228088920051304571, guid: a48f59756b9d3ec4081b04a314575a76, type: 3}
       propertyPath: m_RootOrder

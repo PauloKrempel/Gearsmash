@@ -7,8 +7,7 @@ public class Boss : MonoBehaviour
     public Transform player;
     public SpriteRenderer spr;
     public bool isFlipped = true;
-    public Transform sp1;
-    public Transform sp2;
+    
 
     public void LookAtPlayer()
     {
@@ -20,7 +19,7 @@ public class Boss : MonoBehaviour
             //spr.flipX = true;
             //Debug.LogError("Virado para Esquerda");
             transform.localScale = flipped;
-            //transform.Rotate(0f, 180f, 0f);
+            //transform.Rotate(0f, -180f, 0f);
             isFlipped = false;
         }
         else if (transform.position.x > player.position.x && !isFlipped)

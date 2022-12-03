@@ -18,8 +18,7 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> Pools = new List<Pool>();
     public Dictionary<string, Queue<GameObject>> PoolDictionary;
     public bool permissionIntantiate = true;
-
-    public Boss boss; 
+    
     private void Awake()
     {
         Instance = this;
@@ -73,7 +72,7 @@ public class ObjectPooler : MonoBehaviour
     IEnumerator SpawnGO()
     {
         permissionIntantiate = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         permissionIntantiate = true;
         StopCoroutine(SpawnGO());
     }
