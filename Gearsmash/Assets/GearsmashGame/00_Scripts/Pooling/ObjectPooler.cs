@@ -31,7 +31,7 @@ public class ObjectPooler : MonoBehaviour
             Queue<GameObject> objectPool = new Queue<GameObject>();
             for (int i = 0; i < pool.size; i++)
             {
-                GameObject obj = Instantiate(pool.prefab);
+                GameObject obj = Instantiate(pool.prefab, transform.parent);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
                 
@@ -60,6 +60,7 @@ public class ObjectPooler : MonoBehaviour
             if (pooledObject != null)
             {
                 pooledObject.OnObjectSpawn();
+                pooledObject.OnFireball();
             }
             PoolDictionary[tag].Enqueue(objectToSpawn);
             StartCoroutine(SpawnGO());
@@ -72,7 +73,7 @@ public class ObjectPooler : MonoBehaviour
     IEnumerator SpawnGO()
     {
         permissionIntantiate = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         permissionIntantiate = true;
         StopCoroutine(SpawnGO());
     }

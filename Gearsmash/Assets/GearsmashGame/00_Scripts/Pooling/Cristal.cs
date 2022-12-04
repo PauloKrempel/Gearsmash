@@ -19,6 +19,11 @@ public class Cristal : MonoBehaviour , IPooledObject
             transform.position = spawnDOIS.position;
         }
     }
+
+    public void OnFireball()
+    {
+        return;
+    }
     
     
 }

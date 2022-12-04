@@ -9,20 +9,39 @@ namespace EnemySystem.Controllers
     using Status;
     public class EnemyController : MonoBehaviour
     {
-        public float Radius = 10f;
-        private Transform TargetPlayer;
+        public float Radius = 16f; //for Chase
+        public float RadiusToAttack = 12f; //for attack
+        public Transform TargetPlayer;
+        public bool PlayerInRange = false;
+        public float _distancePlayer;
+        public bool AtttackPlayer = false;
 
+        [Header("WayPoint")]
+        public Transform way1;
+            
+        public Transform way2;
+        
         public void Start()
         {
-            TargetPlayer = PlayerManager.Instance.PlayerPosition.transform;
+            PlayerManager.Instance.TesteString();
+            TargetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         private void Update()
         {
-            float _distance = Vector3.Distance(TargetPlayer.position, transform.position);
-            while (_distance <= Radius)
+            _distancePlayer = Vector3.Distance(TargetPlayer.position, transform.position);
+            if (_distancePlayer <= Radius && _distancePlayer < RadiusToAttack)
             {
-                
+                PlayerInRange = true;
+            }
+            else
+            {
+                PlayerInRange = false;
+            }
+
+            if (_distancePlayer <= RadiusToAttack)
+            {
+                AtttackPlayer = true;
             }
             
         }
