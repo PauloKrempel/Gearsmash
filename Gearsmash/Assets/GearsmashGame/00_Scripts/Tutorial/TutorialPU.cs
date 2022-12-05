@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.UI;
 
 public class TutorialPU : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class TutorialPU : MonoBehaviour
 
     [Header("Audio Tutorial")] public AudioSource aviso;
     public PlayableDirector Director;
+
+    [Header("Botões")] public GameObject[] btnSkills;
 
     private void Awake()
     {
@@ -57,6 +60,14 @@ public class TutorialPU : MonoBehaviour
     public void Despausar()
     {
         Time.timeScale = Time.timeScale == 1.0f ? 0.0f : 1.0f;
+    }
+
+    public void ShowSkills()
+    {
+        foreach (var btn in btnSkills)
+        {
+            btn.SetActive(true);
+        }
     }
 
     void Director_Played(PlayableDirector obj)

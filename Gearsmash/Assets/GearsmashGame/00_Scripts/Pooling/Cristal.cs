@@ -24,6 +24,10 @@ public class Cristal : MonoBehaviour , IPooledObject
     {
         return;
     }
+    public void CosmicSpawn(int seed)
+    {
+        return;
+    }
     
     
 }

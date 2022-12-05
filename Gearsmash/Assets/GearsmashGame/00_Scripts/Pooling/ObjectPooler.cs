@@ -42,7 +42,7 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
-    public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+    public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation, float cooldown, int seed)
     {
         if (!PoolDictionary.ContainsKey(tag))
         {
@@ -61,20 +61,22 @@ public class ObjectPooler : MonoBehaviour
             {
                 pooledObject.OnObjectSpawn();
                 pooledObject.OnFireball();
+                pooledObject.CosmicSpawn(seed);
             }
             PoolDictionary[tag].Enqueue(objectToSpawn);
-            StartCoroutine(SpawnGO());
+            StartCoroutine(SpawnGO(cooldown));
             return objectToSpawn;
         }
 
         return null;
     }
+    
 
-    IEnumerator SpawnGO()
+    IEnumerator SpawnGO(float cooldown)
     {
         permissionIntantiate = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(cooldown);
         permissionIntantiate = true;
-        StopCoroutine(SpawnGO());
+        StopCoroutine(SpawnGO(cooldown));
     }
 }

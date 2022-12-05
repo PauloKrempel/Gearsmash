@@ -18,7 +18,7 @@ MonoBehaviour:
   DefaultSprite: {fileID: 21300000, guid: 20daa800a641d9e4cae18a06630db1ef, type: 3}
   NameEnemy: Enemy Drag
   EnemyType: 0
-  Life: 60
+  Life: 230
   DamageAttack: 20
   Speed: 5
   XP: 40

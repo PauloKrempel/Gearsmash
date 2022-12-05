@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource tutorialP2;
     
 
-
+ 
     public bool isPlay = false;
 
     public bool finalTutorialP1 = false;
@@ -37,17 +37,11 @@ public class AudioManager : MonoBehaviour
             buttonsInterface[0].SetActive(true); //esquerda
             buttonsInterface[1].SetActive(true); //direita
             buttonsInterface[2].SetActive(true); //cima
-            buttonsInterface[4].SetActive(true); //Ataque basico
-            
-            // foreach (GameObject btn in buttonsInterface)
-            // {
-            //     btn.SetActive(true);
-            //     
-            //
-            // }
-
+            buttonsInterface[3].SetActive(true); //Ataque basico
             finalTutorialP1 = true;
             Debug.LogError("Hora de ativar");
+            Debug.LogError(buttonsInterface[4].name);
+
         }
     }
 

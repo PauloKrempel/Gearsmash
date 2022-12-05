@@ -16,6 +16,12 @@ namespace EnemySystem.Controllers
         public float _distancePlayer;
         public bool AtttackPlayer = false;
 
+        public bool isTutorial;
+        [Header("Status")] public EnemyStatus status;
+        public float life;
+        private Animator anim;
+        public bool isAlive = true;
+
         [Header("WayPoint")]
         public Transform way1;
             
@@ -23,8 +29,10 @@ namespace EnemySystem.Controllers
         
         public void Start()
         {
+            life = status.Life;
             PlayerManager.Instance.TesteString();
             TargetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
+            anim = GetComponent<Animator>();
         }
 
         private void Update()
@@ -43,7 +51,21 @@ namespace EnemySystem.Controllers
             {
                 AtttackPlayer = true;
             }
+
+            if (life <= 0 && isAlive )
+            {
+                anim.SetTrigger("Die");
+                isAlive = false;
+                //gameObject.SetActive(false);
+            }
             
+        }
+
+        public void TakeDamage(float damage)
+        {
+            Debug.LogError("Perdeu vida");
+            life -= damage;
+            Debug.LogError($"A vida atual do enemy tutorial é de: {life}");
         }
 
         private void OnDrawGizmosSelected()

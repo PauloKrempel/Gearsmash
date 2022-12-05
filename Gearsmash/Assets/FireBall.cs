@@ -37,6 +37,10 @@ public class FireBall : MonoBehaviour, IPooledObject
     {
         return;
     }
+    public void CosmicSpawn(int seed)
+    {
+        return;
+    }
 
     public void OnFireball()
     {
@@ -50,20 +54,12 @@ public class FireBall : MonoBehaviour, IPooledObject
         rb2d.AddForce(playerTransform.position * -25f);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.gameObject.CompareTag("Player"))
         {
             Debug.LogError("Colidiu com o player");
-            gameObject.SetActive(false);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.LogError("Colidiu com o player");
+            collision.collider.GetComponent<Health>().TakeDamage(25);
             gameObject.SetActive(false);
         }
     }
