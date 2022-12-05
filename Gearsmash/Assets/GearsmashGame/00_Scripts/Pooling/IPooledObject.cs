@@ -5,4 +5,6 @@ using UnityEngine;
 public interface IPooledObject
 {
     void OnObjectSpawn();
+    void OnFireball();
+    void CosmicSpawn(int seed);
 }

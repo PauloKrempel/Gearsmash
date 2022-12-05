@@ -14,6 +14,11 @@ namespace PlayerSystem.Manager
             int EndDamage = damage - _playerStatus.Armor;
             return EndDamage;
         }
+
+        public void TesteString()
+        {
+            Debug.Log("Teste de mensagem");
+        }
     }
 }
 

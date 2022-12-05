@@ -19,7 +19,7 @@ public class CristalSpawn : MonoBehaviour
             {
                 currentSpawn = spawnCristal[i];
             }
-            ObjectPooler.Instance.SpawnFromPool("cristal", transform.position, Quaternion.identity);
+            ObjectPooler.Instance.SpawnFromPool("cristal", transform.position, Quaternion.identity, 1.5f, 0);
         }
         
     }
