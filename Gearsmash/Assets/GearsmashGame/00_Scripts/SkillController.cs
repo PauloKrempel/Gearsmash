@@ -29,12 +29,23 @@ public class SkillController : MonoBehaviour
 
     void Update()
     {
-        Ability1();
-        Ability2();
-        Ability3();
+        if (isCooldown == true)
+        {
+            Ability1();
+        }
+
+        if (isCooldown2 == true)
+        {
+            Ability2();
+        }
+
+        if (isCooldown3 == true)
+        {
+            Ability3();
+        }
     }
-    void Ability1(){
-        if(Input.GetKey(ability1) && isCooldown == false)
+    public void Ability1(){
+        if(isCooldown == false)
         {
             isCooldown = true;
             abilityImage1.fillAmount = 1;
@@ -49,8 +60,8 @@ public class SkillController : MonoBehaviour
             }
         }
     }
-    void Ability2(){
-        if(Input.GetKey(ability2) && isCooldown2 == false)
+    public void Ability2(){
+        if(isCooldown2 == false)
         {
             isCooldown2 = true;
             abilityImage2.fillAmount = 1;
@@ -66,7 +77,7 @@ public class SkillController : MonoBehaviour
         }
     }
     void Ability3(){
-        if(Input.GetKey(ability3) && isCooldown3 == false)
+        if(isCooldown3 == false)
         {
             isCooldown3 = true;
             abilityImage3.fillAmount = 1;
