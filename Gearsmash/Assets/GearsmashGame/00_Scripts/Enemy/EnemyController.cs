@@ -24,8 +24,9 @@ namespace EnemySystem.Controllers
 
         [Header("WayPoint")]
         public Transform way1;
-            
         public Transform way2;
+
+        [Header("Drop")] public GameObject joia;
         
         public void Start()
         {
@@ -55,8 +56,10 @@ namespace EnemySystem.Controllers
             if (life <= 0 && isAlive )
             {
                 anim.SetTrigger("Die");
+                Instantiate(joia, transform.position, Quaternion.identity);
                 isAlive = false;
-                //gameObject.SetActive(false);
+                TutorialPTwo.instance.FinishedTutorialEnemy = true;
+                gameObject.SetActive(false);
             }
             
         }
