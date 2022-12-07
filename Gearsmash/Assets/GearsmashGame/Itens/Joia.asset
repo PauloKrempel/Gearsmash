@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 0
   itemName: Joia
   value: 1
-  icon: {fileID: 21300000, guid: a8fc10f965542c24a8a358197816dd4e, type: 3}
+  icon: {fileID: 21300000, guid: 240760fae8c4c3d4681f1ef718a32576, type: 3}
   itemType: 0
