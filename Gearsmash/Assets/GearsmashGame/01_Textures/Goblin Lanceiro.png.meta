@@ -1,0 +1,1226 @@
+fileFormatVersion: 2
+guid: a7845729316b4334e95cf0a4f93d2c1b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Goblin Lanceiro_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 654
+        width: 258
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84c249a498845f4e850578a1a99857a
+      internalID: 1234736956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 764
+        width: 136
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a01bfb12206a5488420330159110d9
+      internalID: 1728440364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_2
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 549
+        width: 441
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a927dc9c5f1713f4da7013296f732a8c
+      internalID: 1959525928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 816
+        width: 99
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552e207b528855442a6b2cb0acd69b9a
+      internalID: -1038941756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_4
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 714
+        width: 147
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee488b288a6b354698c4f71659e94fa
+      internalID: -1091029709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_5
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 588
+        width: 158
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fb254d517834246852a5bba0b64657
+      internalID: -989006128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_6
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 767
+        width: 229
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2defb1d36f6b51e478a8855004f3a763
+      internalID: 897045743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_7
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 581
+        width: 264
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b6520b38d4b18438965023b5e9d9ac
+      internalID: -1485393104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 752
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455b18c063a091b49a78df4763877956
+      internalID: -1221100623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_9
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 667
+        width: 131
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b79e206a695114fbdbb202ed0d4938
+      internalID: -761505813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_10
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 750
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669b36abb66dab34e95a60ec40640103
+      internalID: 1853652375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 543
+        width: 92
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95717ce879921994dbad4922a95b23ba
+      internalID: 1949721841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 175
+        width: 146
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2cae9b8f263ea428cb298381a0d881
+      internalID: -1396004821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_13
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 626
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b5cc51587c99e4f8fba2b533d5aee2
+      internalID: 1865514555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_14
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 640
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5070e06fa899c634eb98471505223328
+      internalID: -665336339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 259
+        width: 170
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f4810163a28dd4a92e0ae82f929f76
+      internalID: -1055651246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_16
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 76
+        width: 417
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f282b04a3aef648b3d8e7287e16c7f
+      internalID: -125159212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_17
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 445
+        width: 148
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57497cfa04d1e274cbc0c14d84432ea1
+      internalID: -1785008251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_18
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 580
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c29924561aaa746913768a63d0cdb6
+      internalID: 46691846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_19
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 492
+        width: 94
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d79f0af3c01a224081ea35bbe2605c4
+      internalID: -756457484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_20
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 412
+        width: 190
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f51d4ffaf55a84a90542d4652cfcf4
+      internalID: -846279477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_21
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 348
+        width: 163
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac4e461f37f9f24d875673db060b9fa
+      internalID: 347378445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_22
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 351
+        width: 297
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fc016d86b489944a8a375637fdc186
+      internalID: -149592416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_23
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 267
+        width: 108
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c24896d3f294d74abb4b4a3dcb4c9db
+      internalID: 650897387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 364
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d86452c2beaf042b61dda662e58d13
+      internalID: 16889045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_25
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 293
+        width: 181
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c403fef1ef55044963d9758c803045
+      internalID: 1674477364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_26
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 180
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c11702c20c24342a985aa7561f62cc
+      internalID: 1869599614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_27
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 244
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213ab0205d3642a43acef5111a4e1dc7
+      internalID: -704883087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_28
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 176
+        width: 124
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7534905d6a0fa4daafcabe3f6e5202
+      internalID: -2106326345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_29
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 218
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bed3d7cee14bb345b747c9189ddc7df
+      internalID: -179663638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_30
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 91
+        width: 109
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e0d40c2d9cda344b884d94a01c2156
+      internalID: 1001035881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_31
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 223
+        width: 92
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5271bbc40291d45828b2e2f15a9616
+      internalID: 69748380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_32
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 121
+        width: 121
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0978630bfc1558547bf562172c88a9b1
+      internalID: -169402090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_33
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 161
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8554caec341ccc747bb99a0559ba1909
+      internalID: 1232815549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_34
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 145
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ed704409a021f4ea7378c57f10456b
+      internalID: 1300084965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_35
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 214
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f57304c6277a6e4a8b9f2bb235468a2
+      internalID: -984882465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 863
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85df34b95023ab84ab6fb5a4e315d0d3
+      internalID: 108011193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_37
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 159
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a220cc6eac0183344bed052e403dcd53
+      internalID: -1252074680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_38
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 103
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdeb692c21313f4a9821e081047a7f2
+      internalID: 1199792930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_39
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 145
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4f0f692361b9c41b1713486056df73
+      internalID: 1328328262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_40
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 155
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff189f0e66f363c4296c3ac7fd5e5eec
+      internalID: 1076582520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_41
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 154
+        width: 74
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415dc9c26cfbedf4a9fe1f3cf025bcde
+      internalID: 1705144655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_42
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 149
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93467d05ccf4b414c9d1cef61548dd6d
+      internalID: 1099259940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_44
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 36
+        width: 95
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88bcf1b01b29834f88351101f68d0bd
+      internalID: 2043459152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_45
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 49
+        width: 73
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591a5e08cc8d0e04e80c452efc1caa5d
+      internalID: 190537348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_46
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 43
+        width: 102
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f69f3caad25b904591ef13f0e94f02f
+      internalID: -1855438830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_47
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 35
+        width: 103
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97d9a1f548e7d2498c0f0996e36d158
+      internalID: 1336377613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_48
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 3
+        width: 172
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea9bdd8e7b26624ba123e0c6a55a442
+      internalID: -1565374318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Lanceiro_49
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 17
+        width: 123
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e564d1e58032346a82054369b84dd3
+      internalID: -1542772528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Goblin Lanceiro_19: -756457484
+      Goblin Lanceiro_27: -704883087
+      Goblin Lanceiro_23: 650897387
+      Goblin Lanceiro_16: -125159212
+      Goblin Lanceiro_41: 1705144655
+      Goblin Lanceiro_43: 1818625019
+      Goblin Lanceiro_15: -1055651246
+      Goblin Lanceiro_30: 1001035881
+      Goblin Lanceiro_4: -1091029709
+      Goblin Lanceiro_10: 1853652375
+      Goblin Lanceiro_14: -665336339
+      Goblin Lanceiro_12: -1396004821
+      Goblin Lanceiro_28: -2106326345
+      Goblin Lanceiro_21: 347378445
+      Goblin Lanceiro_3: -1038941756
+      Goblin Lanceiro_31: 69748380
+      Goblin Lanceiro_5: -989006128
+      Goblin Lanceiro_24: 16889045
+      Goblin Lanceiro_45: 190537348
+      Goblin Lanceiro_49: -1542772528
+      Goblin Lanceiro_18: 46691846
+      Goblin Lanceiro_0: 1234736956
+      Goblin Lanceiro_33: 1232815549
+      Goblin Lanceiro_1: 1728440364
+      Goblin Lanceiro_17: -1785008251
+      Goblin Lanceiro_34: 1300084965
+      Goblin Lanceiro_11: 1949721841
+      Goblin Lanceiro_25: 1674477364
+      Goblin Lanceiro_36: 108011193
+      Goblin Lanceiro_39: 1328328262
+      Goblin Lanceiro_26: 1869599614
+      Goblin Lanceiro_48: -1565374318
+      Goblin Lanceiro_29: -179663638
+      Goblin Lanceiro_13: 1865514555
+      Goblin Lanceiro_22: -149592416
+      Goblin Lanceiro_8: -1221100623
+      Goblin Lanceiro_37: -1252074680
+      Goblin Lanceiro_9: -761505813
+      Goblin Lanceiro_2: 1959525928
+      Goblin Lanceiro_6: 897045743
+      Goblin Lanceiro_7: -1485393104
+      Goblin Lanceiro_44: 2043459152
+      Goblin Lanceiro_47: 1336377613
+      Goblin Lanceiro_35: -984882465
+      Goblin Lanceiro_42: 1099259940
+      Goblin Lanceiro_40: 1076582520
+      Goblin Lanceiro_32: -169402090
+      Goblin Lanceiro_38: 1199792930
+      Goblin Lanceiro_20: -846279477
+      Goblin Lanceiro_46: -1855438830
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
