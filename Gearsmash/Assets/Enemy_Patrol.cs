@@ -51,20 +51,21 @@ public class Enemy_Patrol : StateMachineBehaviour
             {
                 currentWay = memoryDir;
             }
-            
-            if (_distance <= 0.999f && currentWay == way1)
+            //0.999f
+            if (_distance <= 3f && currentWay == way1)
             {
                 currentWay = way2;
                 memoryDir = way2;
-                myTransform.Rotate(0f, -180f, 0f);
+                myTransform.Rotate(0f, 180f, 0f);
             }
-            else if (_distance <= 0.999f && currentWay == way2)
+            else if (_distance <= 3f && currentWay == way2)
             {
                 currentWay = way1;
                 memoryDir = way1;
-                myTransform.Rotate(0f, -180f, 0f);
+                myTransform.Rotate(0f, 180f, 0f);
             }
         }
+        Debug.LogWarning("A distancia do enemy do way é de: " + _distance);
         Vector3 target = new Vector2(currentWay.position.x, rb.position.y);
         Vector3 newPos = Vector2.MoveTowards(rb.position, target, status.Speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);

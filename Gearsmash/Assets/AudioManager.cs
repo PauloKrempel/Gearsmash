@@ -37,7 +37,6 @@ public class AudioManager : MonoBehaviour
             buttonsInterface[0].SetActive(true); //esquerda
             buttonsInterface[1].SetActive(true); //direita
             buttonsInterface[2].SetActive(true); //cima
-            buttonsInterface[3].SetActive(true); //Ataque basico
             finalTutorialP1 = true;
             Debug.LogError("Hora de ativar");
             Debug.LogError(buttonsInterface[4].name);

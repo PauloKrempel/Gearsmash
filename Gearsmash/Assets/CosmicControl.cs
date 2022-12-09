@@ -25,7 +25,7 @@ public class CosmicControl : MonoBehaviour
 
     public void SpawnCosmic()
     {
-        ObjectPooler.Instance.SpawnFromPool("Cosmic", CosmicTransform1.position, Quaternion.identity, 0f, 1);
+        ObjectPooler.Instance.SpawnFromPool("Cosmic", CosmicTransform1.position, Quaternion.identity, 5f, 1);
         //ObjectPooler.Instance.SpawnFromPool("Cosmic", CosmicTransform2.position, Quaternion.identity, 0f, 2);
 
     }

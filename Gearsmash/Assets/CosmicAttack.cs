@@ -25,7 +25,7 @@ public class CosmicAttack : MonoBehaviour, IPooledObject
         if (seed == 1)
         {
             transform.position = CosmicControl.instance.CosmicTransform1.position;
-            ObjectPooler.Instance.SpawnFromPool("Cosmic", CosmicControl.instance.CosmicTransform2.position, Quaternion.identity, 0f, 2);
+            ObjectPooler.Instance.SpawnFromPool("Cosmic", CosmicControl.instance.CosmicTransform2.position, Quaternion.identity, 5f, 2);
         }
         else if(seed == 2)
         {

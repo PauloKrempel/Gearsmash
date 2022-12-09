@@ -12,6 +12,8 @@ public class TestTouch : MonoBehaviour
     [HideInInspector][SerializeField] Animator anim;
     [SerializeField] float                     jumpForce = 300f;
     private Rigidbody2D                        rb2d;
+    public LayerMask LayerGround;
+    public bool isFlipped = false;
     
     [Header("Combate")]
     public Transform                           attackPoint;
@@ -50,25 +52,35 @@ public class TestTouch : MonoBehaviour
         auxDir = direction;
     }
 
+    public bool isJumping = false;
     public void TouchJump()
     {
         anim.Play("concept_JumpPlayer");
     }
     public void JumpPlayer()
     {
-        rb2d.AddForce(Vector2.up * jumpForce);
-        anim.SetTrigger("Jump");
+        if (!isJumping)
+        {
+            rb2d.AddForce(Vector2.up * jumpForce);
+            anim.SetTrigger("Jump");
+            isJumping = true;
+        }
+        
     }
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        
+        LayerGround = LayerMask.GetMask("Ground");
 
     }
 
     private void Update()
     {
+        Vector3 flipped = transform.localScale;
+        flipped.x *= -1f;
         if (auxDir != 0)
         {
             transform.Translate(speed * Time.deltaTime * auxDir, 0, 0);
@@ -81,11 +93,39 @@ public class TestTouch : MonoBehaviour
 
         if (auxDir < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            if (!isFlipped)
+            {
+                transform.localScale = flipped;
+                isFlipped = true;
+                //transform.Rotate(0f, -180f, 0f);
+            }
+            //GetComponent<SpriteRenderer>().flipX = true;
+            
         }
         else if (auxDir > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            if (isFlipped)
+            {
+                transform.localScale = flipped;
+                isFlipped = false;
+                //transform.Rotate(0f, 180f, 0f);
+            }
+            
+            //GetComponent<SpriteRenderer>().flipX = false;
+        }
+        
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 2f, LayerGround );
+        if (hit != null)
+        {
+            if (hit.collider.CompareTag("Ground"))
+            {
+                isJumping = false;
+            }
+            else
+            {
+                isJumping = true;
+            }
+            
         }
         
         
@@ -116,5 +156,8 @@ public class TestTouch : MonoBehaviour
     private void OnDrawGizmosSelected() {
         if(attackPoint.position == null) return;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(transform.position, Vector3.down * 2f);
     }
 }

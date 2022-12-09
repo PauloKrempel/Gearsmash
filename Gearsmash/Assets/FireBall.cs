@@ -10,20 +10,22 @@ public class FireBall : MonoBehaviour, IPooledObject
     public Transform pivot;
     public float speed;
     public bool isFlipped = true;
-    
 
+    private Vector3 dirBullet;
     public void LookAtPlayer()
     {
         Vector3 flipped = transform.localScale;
         flipped.x *= -1f;
 
-        if (transform.position.x > playerTransform.position.x && isFlipped)
+        if (transform.position.x < playerTransform.position.x && isFlipped)
         {
+            dirBullet = Vector3.left;
             transform.localScale = flipped;
             isFlipped = false;
         }
-        else if (transform.position.x < playerTransform.position.x && !isFlipped)
+        else if (transform.position.x > playerTransform.position.x && !isFlipped)
         {
+            dirBullet = Vector3.right;
             transform.localScale = flipped;
             isFlipped = true;
         }
@@ -48,10 +50,10 @@ public class FireBall : MonoBehaviour, IPooledObject
         pivot = GameObject.FindGameObjectWithTag("pivot").transform;
         transform.position = pivot.position;
         LookAtPlayer();
-        
-        Vector3 target = new Vector2(playerTransform.position.x, rb2d.position.y);
-        Vector3 newPos = Vector2.MoveTowards(rb2d.position, target, speed * Time.fixedDeltaTime);
-        rb2d.AddForce(playerTransform.position * -25f);
+
+        var position = playerTransform.position;
+        Vector3 target = new Vector2(position.x, rb2d.position.y);
+        rb2d.AddForce(dirBullet * 2500f, ForceMode2D.Force);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

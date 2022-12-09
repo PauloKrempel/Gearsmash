@@ -89,7 +89,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -170,4 +170,4 @@ MonoBehaviour:
   way1: {fileID: 0}
   way2: {fileID: 0}
   currentWay: {fileID: 0}
-  status: {fileID: 11400000, guid: 62f4f88d7a602fe4d8a4644ad672f44a, type: 2}
+  status: {fileID: 11400000, guid: 856bd6ef3c9193844bf87a99433d1e84, type: 2}

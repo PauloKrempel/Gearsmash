@@ -10,6 +10,9 @@ TagManager:
   - Cristal
   - FireBall
   - pivot
+  - Lanca
+  - Espinhos
+  - campo
   layers:
   - Default
   - TransparentFX
@@ -21,8 +24,8 @@ TagManager:
   - Fireball
   - EnemyTutorial
   - Lanca
-  - 
-  - 
+  - Espinhos
+  - Ground
   - 
   - 
   - 

@@ -76,7 +76,7 @@ public class SkillController : MonoBehaviour
             }
         }
     }
-    void Ability3(){
+    public void Ability3(){
         if(isCooldown3 == false)
         {
             isCooldown3 = true;

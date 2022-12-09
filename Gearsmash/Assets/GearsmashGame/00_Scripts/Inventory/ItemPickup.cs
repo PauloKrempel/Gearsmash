@@ -24,7 +24,7 @@ public class ItemPickup : MonoBehaviour
         }
         if (effect != null)
         {
-            Destroy(effect.gameObject);
+            Destroy(effect.gameObject, 12f);
         }
     }
 }
